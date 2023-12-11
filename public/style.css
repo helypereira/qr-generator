@@ -1,0 +1,165 @@
+:root {
+    --rouge : #e63946; 
+    --azul : #a8dadc; 
+    --gris-claro : #f8f8f8;
+    --gris : rgb(183, 183, 183);
+    --blu : #00225b;
+    --blu-b : #6cedd4;
+    --blu-c : #3870cf;
+}
+
+* {
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--gris-claro);
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px 50px 50px;
+
+}
+
+nav img {
+    width: 60px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--blu-c);
+    margin-left: 10px;
+}
+main {
+    display: flex;
+    margin: 100px 50px;
+    justify-content: space-around;
+}
+
+#qr img {
+    width: 180px;
+    box-shadow: rgba(12, 37, 54, 0.15) 0px 1px 15px;
+}
+
+#form {
+    width: 60%;
+    padding: 30px 40px;
+    box-shadow: rgba(12, 37, 54, 0.15) 0px 1px 15px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+}
+
+input#url {
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--blu-c);
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input#url::placeholder{
+    color: var(--gris);
+}
+
+input:focus{
+    border: 1px solid var(--rouge);
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid var(--gris-claro);
+    background-color: var(--blu-b);
+    font-weight: 600;
+    color: #00225b;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover{
+    transition: 0.5s;
+    background-color: var(--blu-c);
+    color: white;
+    cursor: pointer;
+}
+
+label {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--blu);
+}
+
+article h2 {
+    font-weight: 400;
+    font-size: 56px;
+    margin: 0;
+}
+
+article h6 {
+    margin: 0px 0 0px 0;
+    font-size: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0px 0px 0px;
+}
+
+footer img {
+    width: 32px;
+}
+
+footer a {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        margin: 30px 0px 0px 0px;
+        align-items: center;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px 0px;
+    }
+
+    #form {
+        width: 80%;
+        margin: 10px;
+    }
+
+    #qr img {
+        margin-top: 30px;
+    }
+
+    footer {
+        margin: 40px 0px 0px 0px;
+    }
+}

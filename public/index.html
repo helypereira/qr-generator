@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    <title>QR Generator</title>
+</head>
+<body>
+    <header>    
+        <nav>
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+                <a href="#" class="logo">QR Generator</a>
+            </nav>
+    </header>
+    <main>
+        <section id="form">
+            <article>
+                <form action="/index" method="POST">
+                    <label for="url">Enter Text or Website URL to generate QR code</label><br>
+                    <input type="text" id="url" name="url" placeholder="e.g. www.mywebsite.com"><br>
+                    <input type="submit" value="Generate">
+                </form>
+            </article>
+        </section>
+        <section id="qr">
+            <img src="img/siteQR.png" alt="código QR">
+        </section>
+    </main>
+    <footer>
+        <a href="https://helypereira.github.io/" target="_blank"><img src="../img/github.png" alt="github"></a>
+        <a href="https://helypereira.github.io/" target="_blank">helypereira.github.io/</a>
+    </footer>
+    <script src="../index.js"></script>
+</body>
+</html>
